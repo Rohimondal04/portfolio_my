@@ -11,17 +11,55 @@
 <body>
 
 <!-- Hero Section -->
-<section class="bg-secondary text-white text-center py-5">
-    <div class="container">
-        <h1>Rohi Mondal</h1>
-        <p>Currently pursuing my bachelor's degree in BCA from Adamas University (2023-2027).</p>
-        <a href="#contact" class="btn btn-success btn-lg">Contact Me</a>
+<!-- Hero Section with Background Carousel and Extended Height -->
+<section class="position-relative text-white text-center" style="height: 50vh; overflow: hidden;">
+    <!-- Carousel in Background -->
+    <div id="carouselExampleInterval" class="carousel slide position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" style="z-index: -1;">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/download.png" class="d-block w-100" alt="First Slide" style="object-fit: cover; height: 100%; opacity: 0.6;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/carousel2.png" class="d-block w-100" alt="Second Slide" style="object-fit: cover; height: 100%; opacity: 0.6;">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images.png" class="d-block w-100" alt="Third Slide" style="object-fit: cover; height: 100%; opacity: 0.6;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Content: Centered and with New Font Color -->
+    <div class="container position-relative" style="z-index: 1; height: 100vh;">
+        <h1 style="color: #11010b;">Rohi Mondal</h1>
+        <p style="color: #11010b;">Currently pursuing my bachelor's degree in BCA from Adamas University (2023-2027).</p>
+        <!-- Button to Open Modal -->
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
     </div>
 </section>
 
+<!-- Modal Structure for Contact Me -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Email:</strong> mondalrohi96@gmail.com</p>
+
+                <p>You can reach out to me via email  for any queries or collaborations. I look forward to hearing from you!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="mailto:mondalrohi96@gmail.com" class="btn btn-success">Send Email</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Main Content -->
 <div class="container mt-5">
-
     <!-- Profile Section -->
     <div class="row justify-content-center mb-5">
         <div class="col-md-4 text-center">
@@ -97,7 +135,7 @@
                 <li>Making a CV</li>
                 <li>A basic website about legends</li>
                 <li>Mentor Mentee App</li>
-               <li>Question Paper Detector</li>
+                <li>Question Paper Detector</li>
                 <li> BMI Calculator</li>
             </ul>
         </div>
@@ -121,19 +159,19 @@
                 </tr>
                 <tr>
                     <td>Basic HTML</td>
-                    <td>Advanced</td>
+                    <td>Basic</td>
                 </tr>
                 <tr>
                     <td>MS Word</td>
-                    <td>Advanced</td>
+                    <td>Basic</td>
                 </tr>
                 <tr>
                     <td>PPT Making</td>
-                    <td>Advanced</td>
+                    <td>Basic</td>
                 </tr>
                 <tr>
-                    <td>Website UI/UX Designing using ChatGPT</td>
-                    <td>Beginner</td>
+                    <td>Python Programming</td>
+                    <td>Basic</td>
                 </tr>
                 </tbody>
             </table>
@@ -143,16 +181,10 @@
     <!-- Contact Section -->
     <div class="row mb-5" id="contact">
         <div class="col">
-            <h2 class="fw-bold text-secondary">Personal Contact Details</h2>
-            <p class="contact-details"><strong>Email:</strong> mondalrohi96@gmail.com</p>
-            <p class="contact-details"><strong>Contact:</strong> 7827638490</p>
-            <a href="mailto:mondalrohi96@gmail.com" class="btn btn-success">Send Email</a>
-            <a href="https://www.linkedin.com/in/rohi-mondal-595a5729a/" class="btn btn-primary">Linkdin</a>
+            <a href="https://www.linkedin.com/in/rohi-mondal-595a5729a/" class="btn btn-primary">LinkedIn</a>
             <a href="https://github.com/Rohimondal04" class="btn btn-success">GitHub</a>
-
         </div>
     </div>
-
 </div>
 
 <!-- Footer -->
